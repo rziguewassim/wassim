@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISI KEF  </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+
+            <!--<a href="index.html"><img src="logo.png" alt="logoimage"></a>-->
+            <h2 class="logo">ISI KEF</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ACCEUIL</a></li>
+                    <li><a href="about.html">VIE ESTUDIANTINE</a></li>
+                    <li><a href="course.html">NOS ACTUALITES</a></li>
+                    <li><a href="blog.html">NOTRE BIBLIOTHEQUES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+    <!--Contact Us-->
+
+    <section class="location">
+
+       
+    <img src="images/MAPS.jpg" width="800">
+    </section>
+
+ 
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>ADRESSE :</h5>
+                        <p>5 Rue Saleh Ayech - 7100 Kef</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>TEL: </h5>
+                        <p> (216) 78 201 056</p>
+                        <h5>FAX: </h5>
+                        <p> (216) 78 200 237</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>EMAIL</h5>
+                        <p>ISI KEF @GMAIL.COM</p>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message"></textarea>
+                    
+                </form>
+            </div>
+
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+     
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"> </i> by INES AYARI</p>
+    </section>
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
